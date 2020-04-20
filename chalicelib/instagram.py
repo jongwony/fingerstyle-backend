@@ -1,23 +1,20 @@
 import asyncio
 
-import boto3
 import jmespath
 from requests import Session
 
+from .aws_sdk import BotoWrapper
+
 
 class InstagramAPISession(Session):
-    @staticmethod
-    def access_token():
-        ssm = boto3.client('ssm')
-        return ssm.get_parameter(Name='/api_key/instagram/fingerstyle')['Parameter']['Value']
-
     @staticmethod
     def url(path):
         return f'https://graph.instagram.com{path}'
 
     def __init__(self):
         super().__init__()
-        self.params['access_token'] = self.access_token()
+        aws_api = BotoWrapper()
+        self.params['access_token'] = aws_api.access_token()
 
 
 class InstagramPublicSession(Session):

@@ -8,7 +8,9 @@
         "logs:CreateLogStream",
         "logs:PutLogEvents",
         "execute-api:Invoke",
-        "ssm:GetParameter"
+        "ssm:GetParameter",
+        "s3:GetObject",
+        "s3:PutObject"
       ],
       "Resource": "*"
     }

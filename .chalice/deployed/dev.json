@@ -1,6 +1,22 @@
 {
   "resources": [
     {
+      "name": "per_day_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::237943334087:role/gallery-dev-per_day",
+      "role_name": "gallery-dev-per_day"
+    },
+    {
+      "name": "per_day",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:237943334087:function:gallery-dev-per_day"
+    },
+    {
+      "name": "per_day-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "gallery-dev-per_day-event"
+    },
+    {
       "name": "api_handler_role",
       "resource_type": "iam_role",
       "role_arn": "arn:aws:iam::237943334087:role/gallery-dev-api_handler",
