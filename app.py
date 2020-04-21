@@ -21,5 +21,6 @@ def index():
 
 
 @app.schedule('rate(1 day)')
-def per_day():
+def per_day(event):
+    print(event)
     aws_api.put_s3(cache_key, gallery())
