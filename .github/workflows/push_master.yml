@@ -25,6 +25,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-northeast-2
-    - name: Deploy chalice
+    - name: Test and Deploy chalice
       run: |
+        pytest
         chalice deploy

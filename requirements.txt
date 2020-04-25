@@ -2,3 +2,6 @@ boto3
 jmespath
 chalice
 requests
+pytest
+google-api-python-client
+moto

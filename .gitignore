@@ -3,3 +3,5 @@ __pycache__/
 
 .chalice/deployments/
 .chalice/venv/
+
+client_secrets.json

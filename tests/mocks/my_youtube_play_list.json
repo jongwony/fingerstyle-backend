@@ -1,0 +1,211 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/E1Z3Gvw5iTl9fU0KCsQay3_9t6w\"",
+  "prevPageToken": "CBQQAQ",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/kqDA_IG2IjDfXq62vVtFBKbil7Y\"",
+      "id": "VVVkZFFPdW9ZQlZxXzd2dHBEMjJGY2NnLmNGTmJjUWdIekpR",
+      "snippet": {
+        "publishedAt": "2012-11-22T02:46:33.000Z",
+        "channelId": "UCddQOuoYBVq_7vtpD22Fccg",
+        "title": "Guitar boogie",
+        "description": "Tommy emmanuel",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cFNbcQgHzJQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cFNbcQgHzJQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cFNbcQgHzJQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/cFNbcQgHzJQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "jongwony",
+        "playlistId": "UUddQOuoYBVq_7vtpD22Fccg",
+        "position": 20,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "cFNbcQgHzJQ"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/Qot6z6QjjXUVzeNi5OTKZIQ4MlE\"",
+      "id": "VVVkZFFPdW9ZQlZxXzd2dHBEMjJGY2NnLmlqRnE0RUdJcG1n",
+      "snippet": {
+        "publishedAt": "2012-11-18T07:46:24.000Z",
+        "channelId": "UCddQOuoYBVq_7vtpD22Fccg",
+        "title": "Red shoes dance",
+        "description": "Kotaro oshio",
+        "thumbnails": {
+          "default": {
+            "url": "https://i9.ytimg.com/vi/ijFq4EGIpmg/default.jpg?sqp=CPCpjvUF&rs=AOn4CLDLOVdW7DifLy36ctAVkVhI4r81sQ",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i9.ytimg.com/vi/ijFq4EGIpmg/mqdefault.jpg?sqp=CPCpjvUF&rs=AOn4CLDuThV5oumnfvvo7YhIYoQRhIrpOw",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i9.ytimg.com/vi/ijFq4EGIpmg/hqdefault.jpg?sqp=CPCpjvUF&rs=AOn4CLAzi7IBMpN7Ue2XGJOX_Cmnr8PRog",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i9.ytimg.com/vi/ijFq4EGIpmg/sddefault.jpg?sqp=CPCpjvUF&rs=AOn4CLATnoX0YOCGxNi54O1F8cs8D-RWoQ",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "jongwony",
+        "playlistId": "UUddQOuoYBVq_7vtpD22Fccg",
+        "position": 21,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "ijFq4EGIpmg"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/PZMLFXH2iyB17p4V-8WEK3CTUDE\"",
+      "id": "VVVkZFFPdW9ZQlZxXzd2dHBEMjJGY2NnLkljY3dlQnM2dXhR",
+      "snippet": {
+        "publishedAt": "2012-11-17T07:25:35.000Z",
+        "channelId": "UCddQOuoYBVq_7vtpD22Fccg",
+        "title": "Happy birthday !",
+        "description": "Okazaki rynten",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IccweBs6uxQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IccweBs6uxQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IccweBs6uxQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/IccweBs6uxQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "jongwony",
+        "playlistId": "UUddQOuoYBVq_7vtpD22Fccg",
+        "position": 22,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "IccweBs6uxQ"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/7GCW0G6aws36gala9sOqPpi6Ogk\"",
+      "id": "VVVkZFFPdW9ZQlZxXzd2dHBEMjJGY2NnLkk1dlhwOWEzZk1r",
+      "snippet": {
+        "publishedAt": "2012-11-14T07:03:13.000Z",
+        "channelId": "UCddQOuoYBVq_7vtpD22Fccg",
+        "title": "Fly to the dream",
+        "description": "Kotaro oshio",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/I5vXp9a3fMk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/I5vXp9a3fMk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/I5vXp9a3fMk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/I5vXp9a3fMk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "jongwony",
+        "playlistId": "UUddQOuoYBVq_7vtpD22Fccg",
+        "position": 23,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "I5vXp9a3fMk"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/UWNhsjfa78G6mhQ5urn1EcQAWB4\"",
+      "id": "VVVkZFFPdW9ZQlZxXzd2dHBEMjJGY2NnLm9BZFRwNXlHWGhB",
+      "snippet": {
+        "publishedAt": "2012-11-12T09:33:27.000Z",
+        "channelId": "UCddQOuoYBVq_7vtpD22Fccg",
+        "title": "Heartbeat",
+        "description": "Kotaro oshio cover",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oAdTp5yGXhA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oAdTp5yGXhA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oAdTp5yGXhA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oAdTp5yGXhA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "jongwony",
+        "playlistId": "UUddQOuoYBVq_7vtpD22Fccg",
+        "position": 24,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "oAdTp5yGXhA"
+        }
+      }
+    }
+  ]
+}
