@@ -29,7 +29,7 @@ def generate_playlist():
         # Retrieve the list of videos uploaded to the authenticated user's channel.
         playlist_items_list_request = youtube.playlistItems().list(
             playlistId=uploads_list_id,
-            part="snippet",
+            part="snippet,status",
             maxResults=20
         )
 
@@ -45,8 +45,17 @@ def generate_playlist():
 def youtube_cards():
     def formatter(x):
         return jmespath.search(
-            'snippet | {title: title, description: description, id: resourceId.videoId}',
+            '{title: snippet.title, '
+            'description: snippet.description, '
+            'id: snippet.resourceId.videoId, '
+            'privacy: status.privacyStatus}',
             x,
         )
 
     return [formatter(item) for item in generate_playlist()]
+
+
+if __name__ == '__main__':
+    import json
+    with open('tests/mocks/my_youtube_play_list.json', 'w') as f:
+        json.dump(list(generate_playlist()), f)

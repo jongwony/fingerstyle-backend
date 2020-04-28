@@ -11,9 +11,10 @@ def test_youtube_cards():
         content = json.load(f)
 
     mock = MagicMock()
-    mock.return_value = iter(content['items'])
+    mock.return_value = iter(content)
     with patch.object(youtube, 'generate_playlist', new=mock):
         result = youtube_cards()
 
     print(result)
-    assert result[0]["title"] == "Guitar boogie"
+    assert result[0]["title"] == "나비보벳따우 인트로"
+    assert result[0]["privacy"] == "public"
