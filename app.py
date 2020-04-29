@@ -31,9 +31,8 @@ def youtube():
 
 @app.schedule('rate(1 day)')
 def per_day(event):
-    print(event)
+    print(event.to_dict())
     batch()
-    return {}
 
 
 def batch():
