@@ -30,9 +30,10 @@ def youtube():
 
 
 @app.schedule('rate(1 day)')
-def per_day(event, context):
+def per_day(event):
     print(event)
     batch()
+    return {}
 
 
 def batch():
