@@ -32,6 +32,7 @@ def carousel_sync():
         '[].{"img-src": display_url, caption: edge_media_to_caption.edges[0].node.text}',
         session.get().json()
     )
+    print(images)
     return [image for image in images if '#guitar' in image['caption']]
 
 
