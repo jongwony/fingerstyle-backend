@@ -1,4 +1,4 @@
-from chalice import Chalice, CORSConfig
+from chalice import Chalice, CORSConfig, Response
 
 from chalicelib.aws_sdk import BotoWrapper
 from chalicelib.youtube import youtube_cards
@@ -6,6 +6,7 @@ from chalicelib.instagram import gallery
 
 cors_config = CORSConfig(
     allow_origin='https://fingerstyle.jongwony.com',
+    allow_headers=['Cross-Origin-Resource-Policy'],
     max_age=3600,
 )
 app = Chalice(app_name='fingerstyle')
@@ -21,12 +22,18 @@ def index():
 
 @app.route('/instagram', cors=cors_config)
 def instagram():
-    return aws_api.json_deserialize(instagram_cache_key)
+    return Response(
+        body=aws_api.json_deserialize(instagram_cache_key),
+        headers={'Cross-Origin-Resource-Policy': 'cross-origin'},
+    )
 
 
 @app.route('/youtube', cors=cors_config)
 def youtube():
-    return aws_api.json_deserialize(youtube_cache_key)
+    return Response(
+        body=aws_api.json_deserialize(youtube_cache_key),
+        headers={'Cross-Origin-Resource-Policy': 'cross-origin'},
+    )
 
 
 @app.schedule('rate(1 day)')

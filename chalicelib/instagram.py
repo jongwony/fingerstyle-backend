@@ -1,3 +1,4 @@
+import os
 import asyncio
 
 import jmespath
@@ -39,15 +40,20 @@ class InstagramPublicSession(Session):
 
 
 def carousel_sync():
-    session = InstagramPublicSession()
-    response = session.get()
-    print(response.content)
+    filename = 'dump.json'
+    if os.path.exists(filename):
+        import json
+        data = json.load(open('dump.json', 'rb'))
+    else:
+        session = InstagramPublicSession()
+        response = session.get()
+        data = response.json()
     images = jmespath.search(
         'graphql.user.edge_owner_to_timeline_media.edges[].node | '
         '[].{"img-src": display_url, caption: edge_media_to_caption.edges[0].node.text}',
-        response.json()
+        data,
     )
-    return [image for image in images if '#guitar' in image['caption']]
+    return [image for image in images if image.get('caption') and '#guitar' in image.get('caption')]
 
 
 async def get_media():
