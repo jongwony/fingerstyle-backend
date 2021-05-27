@@ -10,7 +10,7 @@ from .aws_sdk import BotoWrapper
 class InstagramAPISession(Session):
     @staticmethod
     def url(path):
-        return f'https://graph.instagram.com{path}'
+        return f'https://graph.facebook.com/v10.0{path}'
 
     def __init__(self):
         super().__init__()
@@ -58,14 +58,14 @@ def carousel_sync():
 
 async def get_media():
     session = InstagramAPISession()
-    resp = session.get(session.url('/me/media'))
+    resp = session.get(session.url('/17841404009714041/media'))
     recent = 0
     for data in resp.json()['data']:
         media_id = data['id']
-        session.params['fields'] = 'id,caption,media_type,media_url,thumbnail_url,timestamp'
+        session.params['fields'] = 'id,caption,media_type,media_url,timestamp'
         media = session.get(session.url(f'/{media_id}'))
         exports = media.json()
-        if '#guitar' in exports['caption']:
+        if '#guitar' in exports.get('caption', ''):
             yield exports
             await asyncio.sleep(0)
             recent += 1
@@ -79,17 +79,17 @@ async def carousel():
             'caption': src['caption'],
         }
         if src['media_type'] == 'VIDEO':
-            data['img-src'] = src['thumbnail_url']
+            data['media_url'] = src['thumbnail_url']
         else:
-            data['img-src'] = src['media_url']
+            data['media_url'] = src['media_url']
         return data
 
     return [formatter(media) async for media in get_media()]
 
 
 def gallery():
-    # return asyncio.run(carousel())
-    return carousel_sync()
+    return asyncio.run(carousel())
+    # return carousel_sync()
 
 
 if __name__ == '__main__':
